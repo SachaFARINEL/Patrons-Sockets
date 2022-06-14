@@ -8,6 +8,9 @@ public abstract class Operateur extends Algebre {
     private final String representation;
     protected List<Algebre> arguments;
 
+    public void accept(Visiteur visitor)
+    { visitor.visit(this); }
+
     public Operateur(String operateur) {
         this.representation = operateur;
         this.arguments = new ArrayList<Algebre>();

@@ -72,7 +72,9 @@ public class Expression {
 
     public static void main(String[] args) {
 //        premierTest();
-//        System.out.println(Expression.getInstance().getExpressionUnique() + " = " + Expression.getInstance().getExpressionUnique().interpret());
+        System.out.println(Expression.getInstance().getExpressionUnique() + " = " + Expression.getInstance().getExpressionUnique().interpret());
+//        Visiteur visit = new Visiteur();
+//        visit.visit((Operateur) Expression.getInstance().getExpressionUnique());
     }
 
 }
